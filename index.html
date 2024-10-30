@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mastering Public Speaking - Comprehensive Course</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" rel="stylesheet">
   <style>
     .btn-primary {
       @apply bg-blue-500 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors;
@@ -98,7 +97,7 @@
     <div class="container mx-auto px-4">
       <h2 class="section-title">Course Instructor</h2>
       <div class="flex items-center">
-        <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_man_people_person_avatar_white_tone_icon_159363.png" alt="Instructor" class="rounded-full w-24 h-24 mr-6">
+        <img src="/api/placeholder/200/200" alt="Instructor" class="rounded-full w-24 h-24 mr-6">
         <div>
           <h3 class="text-xl font-bold">John Doe</h3>
           <p class="text-gray-600">Expert Public Speaking Trainer</p>
@@ -112,7 +111,30 @@
     <div class="container mx-auto px-4 text-center">
       <h2 class="section-title">Ready to Transform Your Public Speaking?</h2>
       <p class="text-xl mb-8">Sign up for the Mastering Public Speaking course today and unlock your true potential as a confident and engaging presenter.</p>
-      <a href="#" class="btn-primary">Enroll Now</a>
+      <p class="text-xl font-bold mb-4">Course Price: €9.90</p>
+      <a href="#contact" class="btn-primary">Enroll Now</a>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="section-title">Stay in Touch</h2>
+      <p class="mb-4">Leave your details to receive offers, our newsletter, or inquire about the course.</p>
+      <form>
+        <div class="mb-4">
+          <label for="name" class="block font-bold mb-2">Name</label>
+          <input type="text" id="name" name="name" class="border rounded-lg px-4 py-2 w-full" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-bold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="border rounded-lg px-4 py-2 w-full" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block font-bold mb-2">Message</label>
+          <textarea id="message" name="message" rows="4" class="border rounded-lg px-4 py-2 w-full" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
     </div>
   </section>
 
